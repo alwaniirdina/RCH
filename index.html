@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>RCH Home Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<header>
+<div id="AboutUs" class="tabcontent">
+  <h1>About Us</h1>
+  <p>Royal Crown Hotel was established in 2010<br>The purpose of this website is to help user booking their hotel in more convenient ways
+<br>Mission: To attract customers from different countries
+<br>Vision: 8000 bookings collected in 5 years</p>
+</div>
+
+<div id="Emergency" class="tabcontent">
+  <h1>Hotline Emergency</h1>
+  <p>Police & Ambulance: 999<br>Hotel Police: (HQ)03-21496590</p>
+</div>
+
+<div id="FAQ" class="tabcontent">
+  <h1>FAQ</h1>
+  <p>Do all guides speak English?<br>Yes, all our guides are fluent in English</p>
+</div>
+
+<div id="Policy" class="tabcontent">
+  <h1>Policy</h1>
+  <p>Individually identifiable information about you is not willfully disclosed <br> to any third party without first receiving your permission.</p>
+</div>
+
+
+<button class="tablink" onclick="openCity('AboutUs', this, '#551289')" id="defaultOpen">AboutUs</button>
+<button class="tablink" onclick="openCity('Emergency', this, 'red')">Hotline Emergency</button>
+<button class="tablink" onclick="openCity('FAQ', this, '#841BD6')">FAQ</button>
+<button class="tablink" onclick="openCity('Policy', this, '#A533FF')">Policy</button>
+</header>
+
+<body>
+<!--Background attach-->
+<div data-role="page" id="index.html">
+<div data-role-"header" width="100%" data-theme="b" style="background-color: #000">
+
+<!-- Navbar and content -->
+<div class="banner">
+	<div class="navbar">
+		<img src="royal.jpg" class="logo">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="care.html">Customer Care</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+	
+	<div class="content">
+		<h1>Let's choose your room now!</h1>
+		<p> Royal Crown Hotel are giving affordable price just for you to stay,<br>do follow us for more room package and other promotion!</p>
+		<div>
+			<button class="tabbook" onclick="btnClicked()">BOOK ROOM</button>
+		</div>
+	</div>
+</div>
+
+<div class="second-background">
+	<h2>Top most famous visited places</h2>
+		
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="kualalumpur.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="melaka.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="langkawi.jpg" style="width:100%">
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="johor.jpg" style="width:100%">
+  </div>
+
+ <div class="mySlides fade">
+    <div class="numbertext">5 / 4</div>
+    <img src="kuantan.jpg" style="width:100%">
+  </div>
+
+ <div class="mySlides fade">
+    <div class="numbertext">6 / 4</div>
+    <img src="terengganu.jpg" style="width:100%">
+  </div>
+
+ <div class="mySlides fade">
+    <div class="numbertext">7 / 4</div>
+    <img src="kelantan.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+	
+</div>
+
+
+<!-- Chat & Message -->
+<div class="background-sec">
+<button class="open-button" onclick="openForm()"><img src="caller.png" width="50px" height="50px"><br>Customer Services</button>
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-contain">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</div>
+
+<!-- footer -->
+<div class="footer"> 
+  <table class="bawahan">
+  <tr>
+    <td><b>OPERATION HOUR</b> <p> Monday - Sunday <br> Time : 24 Hours <br> (Include Public Holidays)</p></td>
+    <td><b>CONTACT US </b><p> Office # | 03-208888671 <br> Hotline # | 011-60788901 <br> Email: hq@royalcrownhotel.com</p> </td>
+	<td><b>POLICIES </b><p>Privacy Policy <br>Payment Policy <br> Term & Conditions</p></td>
+	<td><b>CONNECT WITH US </b><p><img src="sosmed.png" width="200" height="60"></p></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><img src="royal.jpg" width="150px" height="60px"></p></td>
+</tr>
+  </table>
+</div>
+
+<script src="style.js"></script>
+
+</body>
+</html>
+
+
+
+
+</body>
+</html>

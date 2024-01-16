@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>ROYAL CROWN HOTEL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="travol">
+		<div class="navbar">
+			<img src="royal.jpg" width="145px" height="75px">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+	</div>
+		</div>
+			<div class="banner">
+				<div class="left-column">
+					<div class="search-box">
+					<img src="search.png">
+					<input type="text">
+				</div>
+				<h1>Let's book with Royal Crown Hotel now!</h1>
+			</div>
+				
+				<div class="right-column">
+					<img src="flight.jpg">
+				</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

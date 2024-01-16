@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking Form</title>
+    <link rel="stylesheet" href="page2.css">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- Submit popup -->
+<script>
+function sub(){
+alert("Congratulation! Your form is succefully submitted");
+}
+</script>
+
+
+</head>
+<body>
+    <div class="container"><!--container-->
+
+        <form class="form-group"><!--form-->
+            <h1 class="text-center">Royal Crown Hotel Booking Form</h1>
+
+            <div id="form"><!--form-->
+                <h3 class="text-white">Booking Details</h3>
+
+            <div id="input"><!--input-->
+                
+                <input type="text" id="input-group" placeholder="Destination">
+                <input type="text" id="input-group" placeholder="Rooms">
+                <input type="text" id="input-group" placeholder="Check-in date">
+                <input type="text" id="input-group" placeholder="Check-out date">
+
+           
+                <select  id="input-group" style="background: black;">
+                    <option value="">Hotel Class</option>
+                    <option value="">5 Star</option>
+                    <option value="">4 Star</option>
+                    <option value="">3 Star</option>
+                    <option value="">2 Star</option>
+                    <option value="">1 Star</option>
+                </select>
+                <select  id="input-group" style="background: black;">
+                    <option value="">Rating</option>
+                    <option value="">0+</option>
+                    <option value="">7+</option>
+                    <option value="">7.5+</option>
+                    <option value="">8+</option>
+                    <option value="">8.5+</option>
+                </select>
+                </div><!--input-->
+
+                <div id="input2"><!--input2-->
+                    <input type="number" id="input-group" placeholder="Adult">
+                    <input type="number" id="input-group" placeholder="Children(2-11years)">
+                    <input type="number" id="input-group" placeholder="infant(under 2years)">
+                </div><!--input2-->
+
+        
+                <div id="input3"><!--input3-->
+                    <h3 class="text-white">Personal Details</h3>
+                </div><!--input3-->
+
+                <div id="input4"><!--input4-->
+                    <input type="text" id="input-group" placeholder="Full Name">
+                    <input type="number" id="input-group" placeholder="Phone Number">
+                    <input type="email" id="input-group1" placeholder="Email">
+                </div><!--input4-->
+                <button type="submit" onclick="sub()" class="btn btn-warning text-white">Submit Form</button>
+                <button type="reset" class="btn btn-primary">Clear Form</button>
+            </div><!--form-->
+
+        </form><!--form-->
+
+    </div><!--container-->
+	
+	<div>
+			<button class="backpage" onclick="btnClicked()"><span></span>BACK TO MAIN PAGE</button>
+		</div>
+	<script>
+	//customer service part
+	function btnClicked(){
+	document.location.href="index.html";
+	}
+	</script>
+
+
+</body>
+</html>
